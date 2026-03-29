@@ -1,0 +1,22 @@
+# Dependencias
+node_modules/
+
+# Next.js Build
+.next/
+out/
+
+# Vercel
+.vercel
+
+# Secretos y Entorno (Blindaje Crítico)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Otros
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

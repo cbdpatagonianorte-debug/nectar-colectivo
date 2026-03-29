@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  /* Nectar Colectivo: The Artisanal Archive Palette */
+  --color-primary: #735c00;
+  --color-secondary: #376847;
+  --color-surface: #fcf9f4;
+  --color-surface-container: #f0ede9;
+  --color-surface-container-low: #f6f3ee;
+  --color-surface-container-lowest: #ffffff;
+  
+  --color-on-surface: #1c1c19;
+  --color-on-surface-variant: #4d4635;
+  
+  --color-accent-gold: #d4af37;
+
+  /* Typography: Editorial Authority */
+  --font-display: "Noto Serif", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+
+  /* Spacing: Breathable Rhythm */
+  --spacing-fluid-large: 5.5rem;
+  --spacing-fluid-medium: 2.75rem;
+
+  /* Animations: Organic Flow */
+  --animate-nectar-in: nectar-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  
+  @keyframes nectar-in {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Base Styles */
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface-variant);
+  font-family: var(--font-body);
+  @apply antialiased;
+}
+
+h1, h2, h3, .font-editorial {
+  font-family: var(--font-display);
+  color: var(--color-on-surface);
+  @apply tracking-[-0.02em];
+}
+
+/* The "No-Line" Rule: Separation strictly via color shifts */
+.artisan-section {
+  border: none !important;
+}
+
+.surface-lowest {
+  background-color: var(--color-surface-container-lowest);
+}
+
+.surface-low {
+  background-color: var(--color-surface-container-low);
+}
+
+/* Intentionally Asymmetrical Layouts */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  @apply gap-4;
+}
+
+.asymmetric-left {
+  grid-column: 1 / 8;
+  @apply pl-[var(--spacing-fluid-large)];
+}
+
+.asymmetric-right {
+  grid-column: 8 / 13;
+  @apply pr-[var(--spacing-fluid-medium)];
+}
+
+/* Glass & Gradient: Honey Glow */
+.honey-glass {
+  background: rgba(252, 249, 244, 0.03);
+  backdrop-filter: blur(12px);
+  border: none !important;
+}
+
+.honey-glow-cta {
+  background: radial-gradient(circle at center, var(--color-accent-gold), var(--color-primary));
+  @apply rounded-full px-8 py-4 text-white font-bold transition-all hover:scale-105 active:scale-95;
+}
+
+.gold-gradient {
+  background: linear-gradient(to right, var(--color-primary), var(--color-accent-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
