@@ -70,15 +70,12 @@ export default function NectarPage() {
               Porque <span className="text-secondary font-bold">cuidar de las abejas</span> es cuidar de nuestro futuro.
             </p>
 
-            {/* Nueva información de producto y envío */}
+            {/* Nueva información de producto */}
             <div className="flex flex-col gap-2 py-2">
               <div className="flex items-center gap-2 text-primary font-bold text-sm">
                 <Sparkles size={16} />
-                <span>Presentación exclusiva de 500 gr</span>
+                <span>Presentación artesanal de 500 gr</span>
               </div>
-              <p className="text-on-surface-variant text-sm font-medium italic">
-                Envío gratis a toda la Patagonia en compras superiores a 3 frascos.
-              </p>
             </div>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 pt-4">
