@@ -37,7 +37,7 @@ export default function NectarPage() {
             {/* Main Visual */}
             <div className="relative z-10 w-full aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl shadow-primary/5 group">
               <img 
-                src="/images/hero-nectar-v2.png" 
+                src="/images/hero-nectar-v3.png"
                 alt="Miel Cruda de la Patagonia" 
                 className="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-110"
               />
